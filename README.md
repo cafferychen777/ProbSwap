@@ -11,6 +11,17 @@ LLM watermarking typically works by modifying the sampling probability distribut
 
 ## Installation
 
+First, clone the repository with submodules:
+```bash
+git clone --recursive https://github.com/cafferychen777/ProbSwap.git
+```
+
+Or if you've already cloned the repository:
+```bash
+git submodule update --init --recursive
+```
+
+Then install the requirements:
 ```bash
 pip install -r requirements.txt
 ```
@@ -94,6 +105,12 @@ Run watermarking experiments:
 ```bash
 python experiments/run_watermark_experiments.py
 ```
+
+## Dependencies
+
+- [MarkLLM](https://github.com/THU-BPM/MarkLLM): Used for watermarking text generation and detection
+- [Anthropic Claude API](https://anthropic.com/): Used for generating semantically similar substitutes
+- PyTorch and Transformers: Used for model loading and inference
 
 ## License
 
