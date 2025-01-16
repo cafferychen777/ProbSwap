@@ -1,0 +1,3 @@
+[submodule "MarkLLM"]
+	path = MarkLLM
+	url = https://github.com/THU-BPM/MarkLLM.git
