@@ -5,7 +5,7 @@ from typing import Optional, Tuple, List
 class ModelWrapper:
     def __init__(
         self,
-        model_name: str,
+        model_name: str = "gpt2",
         device: str = "cuda" if torch.cuda.is_available() else "cpu"
     ):
         """
